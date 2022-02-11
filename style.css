@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #f2c744;
+  --light: #f4f6f9;
+  --dark: #000;
+  --primary-font: 'Shadows Into Light', cursive;
+  --secondary-font: 'Dancing Script', cursive;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+  width:1500px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* height: 1000px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid: "header header"
+  "content sidebar"
+  "footer footer";
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--light);
+}
+header {
+  grid-area: header;
+  text-align: center;
+  height: 180px;
+  /* border: 1px solid red; */
+  box-shadow: 3px 3px 3px lightgray;
+}
+.logo{
+  display: block;
+  width:100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-sign{
+  font-size: 2em;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+}
+.logo-sign-under{
+  font-family: var(--primary-font);
+}
+footer {
+  grid-area: footer;
+}
