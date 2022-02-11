@@ -20,7 +20,7 @@
         "footer footer";
   grid-template-columns: 2fr 1fr;
   background-color: var(--light);
-  gap: 20px;
+  gap: 10px;
 }
 header {
   grid-area: header;
@@ -44,6 +44,7 @@ header {
 }
 main{
   grid-area: content;
+  padding: 20px;
   width: 100%;
 }
 aside{
