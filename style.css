@@ -28,7 +28,7 @@ header {
   height: 180px;
 }
 .content-box{
-  box-shadow: 0px 4px 4px 3px lightgray;
+  box-shadow: 0px 3px 3px 2px lightgray;
 }
 .logo{
   display: inline-block;
@@ -44,14 +44,23 @@ header {
 }
 main{
   grid-area: content;
-  padding: 20px;
+  text-align: center;
   width: 100%;
 }
-aside{
-  padding-top: 5px;
-  grid-area: sidebar;
+.content-wrapper{
+  display: block;
   width: 100%;
+  margin: 30px auto;
+}
+aside{
+  grid-area: sidebar;
   text-align: center;
+  height: 600px;
+}
+.fixed{
+  position: fixed;
+  width: 31%;
+  padding: 10px;
 }
 .avatar-wrapper{
   display: inline-block;
@@ -76,6 +85,7 @@ footer {
   grid-area: footer;
   text-align: center;
   height: 180px;
+  z-index: 100;
 }
 footer .logo{
   margin-top: 20px;
@@ -87,3 +97,10 @@ footer .logo-sign{
 footer .sign-under{
   font-family: var(--primary-font);
 }
+
+/* @media(width: 720px){
+  main{
+    display: block;
+    width: 70%;
+  }
+} */
