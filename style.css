@@ -55,11 +55,13 @@ main{
 aside{
   grid-area: sidebar;
   text-align: center;
-  height: 600px;
+
 }
-.fixed{
-  position: fixed;
-  width: 31%;
+.sticky{
+  position: sticky;
+  top: 190px;
+  width: 475px;
+  height: 450px;
   padding: 10px;
 }
 .avatar-wrapper{
