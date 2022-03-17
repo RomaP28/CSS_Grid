@@ -110,18 +110,13 @@ footer .sign-under{
   main{
     grid-area: content;
     text-align: center;
-    width: 50%;
+    width: 100%;
   }
   .sticky{
     position: sticky;
     top: 100px;
     width: 290px;
     height: 600px;
-  }
-  main{
-    grid-area: content;
-    text-align: center;
-    width: 100%;
   }
   .content-wrapper{
     display: block;
@@ -135,7 +130,7 @@ footer .sign-under{
 
 @media(min-width: 0px) and (max-width: 719px){
   .wrapper{
-    width: 500px;
+    width: 390px;
     grid: "header"
           "sidebar"
           "content "
@@ -145,21 +140,16 @@ footer .sign-under{
   main{
     grid-area: content;
     text-align: center;
-    width: 50%;
+    width: 100%;
   }
   .sticky{
     position:static;
-    width: 480px;
+    width: 370px;
     height: 600px;
-  }
-  main{
-    grid-area: content;
-    text-align: center;
-    width: 100%;
   }
   .content-wrapper{
     display: block;
-    width: 100%;
+    width: 370px;
     margin: 30px auto;
   }
   img{
