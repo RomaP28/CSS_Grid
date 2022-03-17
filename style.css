@@ -55,7 +55,6 @@ main{
 aside{
   grid-area: sidebar;
   text-align: center;
-
 }
 .sticky{
   position: sticky;
@@ -100,9 +99,70 @@ footer .sign-under{
   font-family: var(--primary-font);
 }
 
-/* @media(width: 720px){
-  main{
-    display: block;
-    width: 70%;
+@media(min-width: 720px) and (max-width: 1199px){
+  .wrapper{
+    width: 720px;
+    grid: "header header"
+          "content sidebar"
+          "footer footer";
+    grid-template-columns: 1fr 1fr;
   }
-} */
+  main{
+    grid-area: content;
+    text-align: center;
+    width: 50%;
+  }
+  .sticky{
+    position: sticky;
+    top: 100px;
+    width: 290px;
+    height: 600px;
+  }
+  main{
+    grid-area: content;
+    text-align: center;
+    width: 100%;
+  }
+  .content-wrapper{
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+  img{
+    display: inline;
+  }
+}
+
+@media(min-width: 0px) and (max-width: 719px){
+  .wrapper{
+    width: 500px;
+    grid: "header"
+          "sidebar"
+          "content "
+          "footer";
+    grid-template-columns: 1fr ;
+  }
+  main{
+    grid-area: content;
+    text-align: center;
+    width: 50%;
+  }
+  .sticky{
+    position:static;
+    width: 480px;
+    height: 600px;
+  }
+  main{
+    grid-area: content;
+    text-align: center;
+    width: 100%;
+  }
+  .content-wrapper{
+    display: block;
+    width: 100%;
+    margin: 30px auto;
+  }
+  img{
+    display: inline;
+  }
+}
